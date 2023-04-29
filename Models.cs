@@ -11,6 +11,7 @@ namespace Models
             this.tamanho = tamanho;
             this.verboso = verboso;
             this.nulo = nulo;
+            Console.WriteLine("aaaa");
         }
     }
 
