@@ -1,0 +1,5 @@
+C:\Users\taini\OneDrive\Documentos\UTFPR\5 SEMESTRE\LP\MiniFramework\obj\Debug\net7.0\MiniFramework.csproj.AssemblyReference.cache
+C:\Users\taini\OneDrive\Documentos\UTFPR\5 SEMESTRE\LP\MiniFramework\obj\Debug\net7.0\MiniFramework.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\taini\OneDrive\Documentos\UTFPR\5 SEMESTRE\LP\MiniFramework\obj\Debug\net7.0\MiniFramework.AssemblyInfoInputs.cache
+C:\Users\taini\OneDrive\Documentos\UTFPR\5 SEMESTRE\LP\MiniFramework\obj\Debug\net7.0\MiniFramework.AssemblyInfo.cs
+C:\Users\taini\OneDrive\Documentos\UTFPR\5 SEMESTRE\LP\MiniFramework\obj\Debug\net7.0\MiniFramework.csproj.CoreCompileInputs.cache

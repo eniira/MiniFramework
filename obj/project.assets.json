@@ -8,19 +8,19 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\user\\.nuget\\packages\\": {}
+    "C:\\Users\\taini\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Desktop\\5 Periodo\\MiniFramework\\MiniFramework.csproj",
+      "projectUniqueName": "C:\\Users\\taini\\OneDrive\\Documentos\\UTFPR\\5 SEMESTRE\\LP\\MiniFramework\\MiniFramework.csproj",
       "projectName": "MiniFramework",
-      "projectPath": "C:\\Users\\user\\Desktop\\5 Periodo\\MiniFramework\\MiniFramework.csproj",
-      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Desktop\\5 Periodo\\MiniFramework\\obj\\",
+      "projectPath": "C:\\Users\\taini\\OneDrive\\Documentos\\UTFPR\\5 SEMESTRE\\LP\\MiniFramework\\MiniFramework.csproj",
+      "packagesPath": "C:\\Users\\taini\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\taini\\OneDrive\\Documentos\\UTFPR\\5 SEMESTRE\\LP\\MiniFramework\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\taini\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -59,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }
