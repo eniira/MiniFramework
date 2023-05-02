@@ -34,8 +34,9 @@ public class HomeController : Controller
         List<Type> types = new List<Type>();
         types.Add(typeof(Pessoa));
         string formHtml = MineFramework.Models.Form.GenerateForms(types);
+        // MineFramework.Models.Form.GenerateDatabaseAccess(types);
         ViewBag.FormHtml = formHtml;
-        return View("Cadastrar");
+        return View("Form");
     }
     
     
@@ -64,7 +65,7 @@ public class HomeController : Controller
             }
         }
 
-        return Ok(usuario.Nome);
+        return Ok("Dados cadastrados!");
     }
     public IActionResult Usuarios()
     {

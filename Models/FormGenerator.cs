@@ -23,6 +23,7 @@ namespace MineFramework.Models
         }
 
 
+
         public static string GenerateForms(List<Type> types)
         {
             StringBuilder sb = new StringBuilder();
@@ -58,7 +59,7 @@ namespace MineFramework.Models
             {
                 PropertyInfo[] properties = type.GetProperties();
 
-                sb.AppendFormat("<form>");
+                // sb.AppendFormat("<form method =""POST"">");
                 sb.AppendLine();
 
                 foreach (PropertyInfo property in properties)
@@ -70,13 +71,15 @@ namespace MineFramework.Models
 
                 sb.AppendFormat("<input type='submit' value='Submit' />");
                 sb.AppendLine();
-                sb.AppendFormat("</form>");
+                // sb.AppendFormat("</form>");
                 sb.AppendLine();
             }
+             
+
             return sb.ToString();
         }
 
-        static void GenerateDatabaseAccess(List<Type> types)
+        public static void GenerateDatabaseAccess(List<Type> types)
         {
             var dbAccessTemplate =
                 @"
@@ -93,16 +96,16 @@ namespace MineFramework.Models
             {
                 public class VAR_NAMEController : Controller
                 {
-                    [HttpGet(""/"")]
+                    [HttpGet]
                     public IActionResult Index()
                     {
                         return View();
                     }
 
-                    [HttpPost(""/processar_formulario"")]
+                    [HttpPost]
                     public IActionResult ProcessForm(IFormCollection form)
                     {
-                        using (var conn = new SQLiteConnection(""Data Source=formularios.db;Version=3;""))
+                        using (var conn = new SQLiteConnection(""Data Source=formularios.db;Version=3,New=True;Compress=True;""))
                         {
                             conn.Open();
 
@@ -159,7 +162,8 @@ namespace MineFramework.Models
                         .Replace("VAR_FIELDS", tableFields)
                         .Replace("VAR_COMMAND_PARAMS", tableParams);
 
-                System.IO.File.WriteAllText($"./Views/Home/Cadastrar.cshtml", dbAccess);
+                System.IO.File.WriteAllText($"./Views/Home/Form.cshtml", dbAccess);
+
             }
         }
     }
