@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\taini\\OneDrive\\Documentos\\UTFPR\\5 SEMESTRE\\LP\\nova\\MiniFramework\\MiniFramework.csproj": {}
+    "T:\\quinto_periodo\\lp\\frame\\MiniFramework\\MiniFramework.csproj": {}
   },
   "projects": {
-    "C:\\Users\\taini\\OneDrive\\Documentos\\UTFPR\\5 SEMESTRE\\LP\\nova\\MiniFramework\\MiniFramework.csproj": {
+    "T:\\quinto_periodo\\lp\\frame\\MiniFramework\\MiniFramework.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\taini\\OneDrive\\Documentos\\UTFPR\\5 SEMESTRE\\LP\\nova\\MiniFramework\\MiniFramework.csproj",
+        "projectUniqueName": "T:\\quinto_periodo\\lp\\frame\\MiniFramework\\MiniFramework.csproj",
         "projectName": "MiniFramework",
-        "projectPath": "C:\\Users\\taini\\OneDrive\\Documentos\\UTFPR\\5 SEMESTRE\\LP\\nova\\MiniFramework\\MiniFramework.csproj",
-        "packagesPath": "C:\\Users\\taini\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\taini\\OneDrive\\Documentos\\UTFPR\\5 SEMESTRE\\LP\\nova\\MiniFramework\\obj\\",
+        "projectPath": "T:\\quinto_periodo\\lp\\frame\\MiniFramework\\MiniFramework.csproj",
+        "packagesPath": "C:\\Users\\ferra\\.nuget\\packages\\",
+        "outputPath": "T:\\quinto_periodo\\lp\\frame\\MiniFramework\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\taini\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\ferra\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"

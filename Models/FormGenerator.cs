@@ -1,4 +1,5 @@
-using System.Globalization;
+using System.Text;
+using System.Reflection;
 
 namespace MineFramework.Models
 {
@@ -8,8 +9,8 @@ namespace MineFramework.Models
         {
             var input = args[0];
             var types = GetTypes(input);
-            GenerateForms (types);
-            GenerateDatabaseAccess (types);
+            GenerateForms(types);
+            GenerateDatabaseAccess(types);
         }
 
         static List<Type> GetTypes(string input)
@@ -22,19 +23,9 @@ namespace MineFramework.Models
         }
 
 
-        public static void GenerateForms(List<Type> types)
+        public static string GenerateForms(List<Type> types)
         {
-            var formHtmlTemplate =
-                @"
-            <html>
-                <body>
-                    <form method=""POST"">
-                        VAR_FIELDS
-                        <input type=""submit"" value=""Enviar"">
-                    </form>
-                </body>
-            </html>
-            ";
+            StringBuilder sb = new StringBuilder();
             var fieldHtmlTemplate =
                 @"
                         <label for=""VAR_NAME"">SHOW_NAME:</label>
@@ -63,37 +54,26 @@ namespace MineFramework.Models
                             "<input type=\"date\" id=\"VAR_NAME\" name=\"VAR_NAME\">")
                     }
                 };
-            foreach (var type in types)
+            foreach (Type type in types)
             {
-                var fields =
-                    type
-                        .GetFields()
-                        .Where(field =>
-                            field.FieldType.IsSubclassOf(typeof (Campo)))
-                        .ToList();
-                var formFields = "";
+                PropertyInfo[] properties = type.GetProperties();
 
-                foreach (var field in fields)
+                sb.AppendFormat("<form>");
+                sb.AppendLine();
+
+                foreach (PropertyInfo property in properties)
                 {
-                    var inputType = htmlFields[field.FieldType];
-                    var inputName = field.Name;
-                    var showName =
-                        ((Campo) field.GetValue(null)).Verboso
-                            ?? inputName.Replace("_", " ");
-
-                    formFields +=
-                        inputType
-                            .Replace("VAR_NAME", inputName)
-                            .Replace("SHOW_NAME", showName);
+                    sb.AppendFormat("<label>{0}</label>", property.Name);
+                    sb.AppendFormat("<input type='text' name='{0}' />", property.Name);
+                    sb.AppendLine();
                 }
-                var formHtml =
-                    formHtmlTemplate.Replace("VAR_FIELDS", formFields);
-                System
-                    .IO
-                    .File
-                    .WriteAllText($"./Views/Home/Cadastrar.cshtml",
-                    formHtml);
+
+                sb.AppendFormat("<input type='submit' value='Submit' />");
+                sb.AppendLine();
+                sb.AppendFormat("</form>");
+                sb.AppendLine();
             }
+            return sb.ToString();
         }
 
         static void GenerateDatabaseAccess(List<Type> types)
@@ -154,7 +134,7 @@ namespace MineFramework.Models
                     type
                         .GetFields()
                         .Where(field =>
-                            field.FieldType.IsSubclassOf(typeof (Campo)))
+                            field.FieldType.IsSubclassOf(typeof(Campo)))
                         .ToList();
 
                 var tableName = type.Name.ToLower();
@@ -179,14 +159,14 @@ namespace MineFramework.Models
                         .Replace("VAR_FIELDS", tableFields)
                         .Replace("VAR_COMMAND_PARAMS", tableParams);
 
-                System.IO.File.WriteAllText($"{tableName}_db.cs", dbAccess);
+                System.IO.File.WriteAllText($"./Views/Home/Cadastrar.cshtml", dbAccess);
             }
         }
     }
 
     public abstract class Campo
     {
-        public string Verboso { get; set; }
+        public string? Verboso { get; set; }
     }
 
     public class Frase : Campo { }

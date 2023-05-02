@@ -1,20 +1,13 @@
-﻿using System.Diagnostics;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using MiniFramework.Models;
-using System.Linq;
-using System;
-using System.Collections.Generic;
 using System.Data.SQLite;
-using System.Text;
-using System.Threading.Tasks;
-using MineFramework.Models; // adiciona o namespace que contém a classe Form
 
 
 namespace MiniFramework.Controllers;
 
 public class Pessoa {
     public int Id { get; set; }
-    public string Nome { get; set; }
+    public string? Nome { get; set; }
     public DateTime DataNascimento { get; set; }
 }
 
@@ -36,11 +29,12 @@ public class HomeController : Controller
         return View();
     }
 
- 
+  
     public IActionResult Form() {
         List<Type> types = new List<Type>();
         types.Add(typeof(Pessoa));
-        MineFramework.Models.Form.GenerateForms(types);
+        string formHtml = MineFramework.Models.Form.GenerateForms(types);
+        ViewBag.FormHtml = formHtml;
         return View("Cadastrar");
     }
     

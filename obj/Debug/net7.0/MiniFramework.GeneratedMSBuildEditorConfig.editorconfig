@@ -9,45 +9,45 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MiniFramework
 build_property.RootNamespace = MiniFramework
-build_property.ProjectDir = C:\Users\taini\OneDrive\Documentos\UTFPR\5 SEMESTRE\LP\nova\MiniFramework\
+build_property.ProjectDir = T:\quinto_periodo\lp\frame\MiniFramework\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\taini\OneDrive\Documentos\UTFPR\5 SEMESTRE\LP\nova\MiniFramework
+build_property.MSBuildProjectDirectory = T:\quinto_periodo\lp\frame\MiniFramework
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/taini/OneDrive/Documentos/UTFPR/5 SEMESTRE/LP/nova/MiniFramework/Views/Home/Cadastrar.cshtml]
+[T:/quinto_periodo/lp/frame/MiniFramework/Views/Home/Cadastrar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDYWRhc3RyYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/taini/OneDrive/Documentos/UTFPR/5 SEMESTRE/LP/nova/MiniFramework/Views/Home/Cadastrar1.cshtml]
+[T:/quinto_periodo/lp/frame/MiniFramework/Views/Home/Cadastrar1.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDYWRhc3RyYXIxLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/taini/OneDrive/Documentos/UTFPR/5 SEMESTRE/LP/nova/MiniFramework/Views/Home/Index.cshtml]
+[T:/quinto_periodo/lp/frame/MiniFramework/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/taini/OneDrive/Documentos/UTFPR/5 SEMESTRE/LP/nova/MiniFramework/Views/Home/Usuarios.cshtml]
+[T:/quinto_periodo/lp/frame/MiniFramework/Views/Home/Usuarios.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxVc3Vhcmlvcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/taini/OneDrive/Documentos/UTFPR/5 SEMESTRE/LP/nova/MiniFramework/Views/Shared/Error.cshtml]
+[T:/quinto_periodo/lp/frame/MiniFramework/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/taini/OneDrive/Documentos/UTFPR/5 SEMESTRE/LP/nova/MiniFramework/Views/Shared/_ValidationScriptsPartial.cshtml]
+[T:/quinto_periodo/lp/frame/MiniFramework/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/taini/OneDrive/Documentos/UTFPR/5 SEMESTRE/LP/nova/MiniFramework/Views/_ViewImports.cshtml]
+[T:/quinto_periodo/lp/frame/MiniFramework/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/taini/OneDrive/Documentos/UTFPR/5 SEMESTRE/LP/nova/MiniFramework/Views/_ViewStart.cshtml]
+[T:/quinto_periodo/lp/frame/MiniFramework/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/taini/OneDrive/Documentos/UTFPR/5 SEMESTRE/LP/nova/MiniFramework/Views/Shared/_Layout.cshtml]
+[T:/quinto_periodo/lp/frame/MiniFramework/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-4nqtd9ehg2
